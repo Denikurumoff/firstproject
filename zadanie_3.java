@@ -39,8 +39,9 @@ class zadanie_3 {
 
 
         } else if (destiny == 2) {
+            System.out.println("введите необходимое количество слов в массиве для поиска самого длинного слова");
+            String[] slova = new String[scanner.nextInt()];
             System.out.println("введите слова");
-            String[] slova = new String[5];
             slova[0] = scanner.next();
             slova[1] = scanner.next();
             slova[2] = scanner.next();
