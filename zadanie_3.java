@@ -1,7 +1,7 @@
-/**
- * @author Deni Kurumov
+
+ /** @author Deni Kurumov
  * @see main(String[] args)
- */
+*/
 
 import java.util.Scanner;
 
@@ -39,29 +39,27 @@ class zadanie_3 {
 
 
         } else if (destiny == 2) {
+
             System.out.println("введите необходимое количество слов в массиве для поиска самого длинного слова");
-            String[] slova = new String[scanner.nextInt()];
+
+            System.out.println("введите количество слов в массиве");
+            int b = scanner.nextInt();
+
             System.out.println("введите слова");
-            slova[0] = scanner.next();
-            slova[1] = scanner.next();
-            slova[2] = scanner.next();
-            slova[3] = scanner.next();
-            slova[4] = scanner.next();
+            String[] slova1 = new String[b];
 
-
-            if ((slova[0].length() > slova[1].length()) && (slova[0].length() > slova[2].length()) && (slova[0].length() > slova[3].length()) && (slova[0].length() > slova[4].length())) {
-                System.out.print("самое длинное слово =" + slova[0]);
-            } else if ((slova[1].length() > slova[0].length()) && (slova[1].length() > slova[2].length()) && (slova[1].length() > slova[3].length()) && (slova[1].length() > slova[4].length())) {
-                System.out.print("самое длинное слово =" + slova[1]);
-            } else if ((slova[2].length() > slova[0].length()) && (slova[2].length() > slova[1].length()) && (slova[2].length() > slova[3].length()) && (slova[2].length() > slova[4].length())) {
-                System.out.print("самое длинное слово =" + slova[2]);
-            } else if ((slova[3].length() > slova[0].length()) && (slova[3].length() > slova[1].length()) && (slova[3].length() > slova[2].length()) && (slova[3].length() > slova[4].length())) {
-                System.out.print("самое длинное слово =" + slova[3]);
-            } else if ((slova[4].length() > slova[0].length()) && (slova[4].length() > slova[1].length()) && (slova[4].length() > slova[2].length()) && (slova[4].length() > slova[3].length())) {
-                System.out.print("самое длинное слово =" + slova[4]);
-            } else {
-                System.out.println("самых длинных слов несколько");
+            for (int c = 0; c < slova1.length; c++) {
+                slova1[c] = scanner.next();
             }
+            String max = slova1[0];
+            for (int c = 0; c < slova1.length; c++) {
+                if (slova1[c].length() > max.length()) {
+                    max = slova1[c];
+                }
+
+            }
+            System.out.println("самым длинным словом в массиве является: " + max);
+
 
         } else {
             System.out.println("вы выбрали невыполнимое действие");
@@ -69,8 +67,6 @@ class zadanie_3 {
 
     }
 }
-
-
 
 
 
