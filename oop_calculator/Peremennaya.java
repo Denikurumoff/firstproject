@@ -1,14 +1,20 @@
-/*package oop_calculator;
+package oop_calculator;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Peremennaya implements interface_vvoda {
     private float peremennaya1;
-    Scanner scanner = new Scanner(System.in);
+    //Scanner scanner = new Scanner(System.in);
 
-    /*public Peremennaya(float peremennaya1) {
+    public Peremennaya(float peremennaya1) {
         this.peremennaya1 = peremennaya1;
     }
+
+    public Peremennaya() {
+
+    }
+
     public float getPeremennaya1() {
         return peremennaya1;
     }
@@ -19,9 +25,11 @@ public class Peremennaya implements interface_vvoda {
 
     public void vvedi() {
         System.out.println("введи первое число");
+
+        Scanner scanner = new Scanner(System.in);
         peremennaya1 = scanner.nextFloat();
+
+
     }
-
-
 }
-        */
+
