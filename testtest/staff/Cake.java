@@ -1,5 +1,4 @@
-package staff;
-import staff.Staff;
+package testtest.staff;
 
 public class Cake extends Staff {
     String size;

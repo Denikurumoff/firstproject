@@ -1,8 +1,4 @@
-package staff;
-
-import staff.Chocolate;
-import staff.Cake;
-import staff.iceCream;
+/**package testtest.staff;
 
 
 import java.util.Arrays;
@@ -25,6 +21,6 @@ public class Gift extends Staff {
 
     }
 }
-
+*/
 
 

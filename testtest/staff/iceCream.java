@@ -1,4 +1,4 @@
-package staff;
+package testtest.staff;
 
 public class iceCream extends Staff {
     String temperature;

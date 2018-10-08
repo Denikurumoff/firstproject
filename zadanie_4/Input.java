@@ -1,9 +1,9 @@
-/**
+package zadanie_4; /**
  * @author Deni Kurumov
  * @see main(String[] args)
  */
 
-import java.util.Scanner;
+/**import java.util.Scanner;
 
 public class Input {
     public static void main(String[] args) {
@@ -19,3 +19,4 @@ public class Input {
     }
 }
 
+*/

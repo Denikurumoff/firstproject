@@ -5,7 +5,7 @@
 //стоимость подарка и вывести на консоль информацию о всех
 //сладостях в подарке.
 
-package staff;
+package testtest.staff;
 
 public abstract class Staff {
     private String delicatess;

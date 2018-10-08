@@ -1,4 +1,4 @@
-package oop_calculator;
+/*package oop_calculator;
 
 import java.util.Scanner;
 
@@ -8,8 +8,7 @@ public class Peremennaya implements interface_vvoda {
 
     /*public Peremennaya(float peremennaya1) {
         this.peremennaya1 = peremennaya1;
-    }*/
-
+    }
     public float getPeremennaya1() {
         return peremennaya1;
     }
@@ -25,3 +24,4 @@ public class Peremennaya implements interface_vvoda {
 
 
 }
+        */

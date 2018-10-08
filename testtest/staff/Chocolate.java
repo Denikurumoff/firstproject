@@ -1,5 +1,5 @@
-package staff;
-import staff.Staff;
+package testtest.staff;
+
 public class Chocolate extends Staff {
     String flavour;
 

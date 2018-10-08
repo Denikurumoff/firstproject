@@ -8,7 +8,7 @@ package zadanie_4;/*
 import java.util.Random;
 import java.util.Arrays;
 
-public class zadanie_4 {
+/**public class zadanie_4 {
     public static void main(String[] args) {
 
         Random rand = new Random();
@@ -21,23 +21,23 @@ public class zadanie_4 {
 
 
         // Вычисление максимального и минимального значения, а также индексов для последующей замены по индексам.
-        int maximum = massiv[0];
+        int maximum = -20;
         int indexMax = 0;
-        int minimum = massiv[0];
+        int minimum = 20;
         int indexMin = 0;
         for (int i = 1; i < massiv.length; i++) {
-            if (massiv[i] > maximum) {
+            if (massiv[i] > maximum &&  massiv[i]<0) { //максимальное отрицательное число
                 maximum = massiv[i];
                 indexMax = i;
-            } else if (massiv[i] < minimum) {
+            } else if (massiv[i] < minimum && massiv[i]>0) { // минимальное положительное число
                 minimum = massiv[i];
                 indexMin = i;
             }
         }
-        System.out.println("Максимальный элемент: " + maximum);
-        System.out.println("индекс максимального элемента: " + indexMax);
-        System.out.println("Минимальный элемент: " + minimum);
-        System.out.println("индекс минимального элемента: " + indexMin);
+        System.out.println("Наибольший отрицательный элемент : " + maximum);
+        System.out.println("индекс наибольшего отрицательного элемента: " + indexMax);
+        System.out.println("Наименьший положительный элемент: " + minimum);
+        System.out.println("индекс наименьшего положительного элемента: " + indexMin);
 
         massiv[indexMin] = maximum;
         massiv[indexMax] = minimum;
@@ -48,3 +48,4 @@ public class zadanie_4 {
 
     }
 }
+*/

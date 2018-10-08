@@ -1,11 +1,11 @@
-
- /** @author Deni Kurumov
+package zadanie_4;
+/** @author Deni Kurumov
  * @see main(String[] args)
 */
 
 import java.util.Scanner;
 
-class zadanie_3 {
+/**class zadanie_3 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -68,7 +68,7 @@ class zadanie_3 {
     }
 }
 
-
+*/
 
 
 
