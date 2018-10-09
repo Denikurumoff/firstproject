@@ -1,0 +1,90 @@
+import oop_calculator.Main;
+import org.junit.Assert;
+import org.junit.Test;
+import oop_calculator.Peremennaya;
+import oop_calculator.Operator;
+import oop_calculator.Peremennaya_2;
+import oop_calculator.interface_vvoda;
+
+import java.util.Scanner;
+
+//JUnit test
+public class CalculatorTest extends Main {
+
+    @Test
+    public void resultAdd() {
+
+
+
+        System.out.println("запускаю тест на сложение переменных");
+        Peremennaya peremennaya = new Peremennaya();
+        peremennaya.setPeremennaya1(1);
+        Peremennaya_2 peremennaya_2 = new Peremennaya_2();
+        peremennaya_2.setPeremennaya_2(10);
+        Operator operator = new Operator();
+        operator.setOperand_1("+");
+        float expResult = 11;
+
+
+
+        Assert.assertEquals(expResult, Main.calculate(peremennaya, peremennaya_2, operator), 0.01);
+
+
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void deleteByZeroException() {
+        System.out.println("запускаю тест на выброс эксепшена");
+        Peremennaya peremennaya = new Peremennaya();
+        peremennaya.setPeremennaya1(1);
+        Peremennaya_2 peremennaya_2 = new Peremennaya_2();
+        peremennaya_2.setPeremennaya_2(0);
+        Operator operator = new Operator();
+        operator.setOperand_1("/");
+
+
+        Main.calculate(peremennaya, peremennaya_2, operator);
+    }
+
+    @Test
+    public void resultDivide() {
+        System.out.println("запускаю тест на деление");
+        Peremennaya peremennaya = new Peremennaya();
+        peremennaya.setPeremennaya1(10);
+        Peremennaya_2 peremennaya_2 = new Peremennaya_2();
+        peremennaya_2.setPeremennaya_2(10);
+        Operator operator = new Operator();
+        operator.setOperand_1("/");
+        float expResult = 1;
+
+
+        Assert.assertEquals(expResult, Main.calculate(peremennaya, peremennaya_2, operator), 0.01);
+    }
+
+    @Test
+    public void resultMultiply() {
+        System.out.println("запускаю тест на умножение");
+        Peremennaya peremennaya = new Peremennaya();
+        peremennaya.setPeremennaya1(10);
+        Peremennaya_2 peremennaya_2 = new Peremennaya_2();
+        peremennaya_2.setPeremennaya_2(10);
+        Operator operator = new Operator();
+        operator.setOperand_1("*");
+        float expResult = 100;
+
+
+        Assert.assertEquals(expResult, Main.calculate(peremennaya, peremennaya_2, operator), 0.01);
+    }
+
+    @Test
+    public void resultSubstract() {
+        System.out.println("запускаю тест на вычитание");
+        Peremennaya peremennaya = new Peremennaya();
+        peremennaya.setPeremennaya1(10);
+        Peremennaya_2 peremennaya_2 = new Peremennaya_2();
+        peremennaya_2.setPeremennaya_2(10);
+        Operator operator = new Operator();
+        operator.setOperand_1("-");
+        float expResult = 0;
+    }
+}
